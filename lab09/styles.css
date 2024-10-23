@@ -1,0 +1,73 @@
+nav {
+    background-color: #ffff00;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+    color: #0073e6; 
+}
+nav a:hover {
+    background-color: #00FF00;
+}
+nav {
+    padding: 10px;
+}
+nav {
+    margin-bottom: 30px;
+}
+.evenrow {background-color: aliceblue;}
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .column1, .column2 {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .row2 .column2 {
+    flex: 2;
+  }
+  
+  .column1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .column2 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  .skillscontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .skillstable, .skillsimage {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .skillsimage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .skillstable table {
+    margin: 0 auto;
+  }
+  
+  .skillsimage {
+    text-align: center;
+  }
+  
