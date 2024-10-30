@@ -95,13 +95,4 @@ iframe {
     max-width: 100%;
     height: auto;
 }
-.row2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px; 
-}
 
