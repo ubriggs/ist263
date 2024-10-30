@@ -1,77 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Syracuse University Responsive Design</title>
+    <title>Syracuse University Stats</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             background-color: #f3f3f3;
         }
 
-        .flex-container {
+        
+        .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
             gap: 20px;
-            max-width: 1000px;
-            margin: 40px;
         }
 
-        .flex-item {
-            background-color: #e0e0e0;
-            border: 1px solid #ccc;
-            padding: 40px;
-            flex: 1 1 250px;
+       
+        .banner-large {
+            width: 100%;
+            height: 300px;
+            background-color: #d74f33; 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
             text-align: center;
         }
 
-        .flex-item a {
-            color: #333;
-            text-decoration: none;
+       
+        .banner-small {
+            width: 100%;
+            height: 150px;
+            background-color: #4b2e83;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+       
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 80%;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        .stat-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            color: #d74f33;
             font-weight: bold;
         }
 
-        .flex-item a:hover {
-            color: #007acc;
+        .stat-text {
+            font-size: 1em;
+            color: #333;
         }
 
+       
         @media (max-width: 600px) {
-            .flex-item {
-                padding: 20px;
-                flex: 1 1 100%; 
+            .banner-large, .banner-small {
+                font-size: 1.5em;
+            }
+            .stat-value {
+                font-size: 1.5em;
+            }
+            .content {
+                width: 100%;
+                padding: 10px;
             }
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Syracuse University Resources</h1>
-    <div class="flex-container">
-        <div class="flex-item">
-            <a href="https://www.syracuse.edu" target="_blank">Syracuse University Home</a>
-        </div>
-        <div class="flex-item">
-            <a href="https://www.syracuse.edu/academics/" target="_blank">Academics</a>
-        </div>
-        <div class="flex-item">
-            <a href="https://www.syracuse.edu/life/" target="_blank">Campus Life</a>
-        </div>
-        <div class="flex-item">
-            <a href="https://www.syracuse.edu/admissions/" target="_blank">Admissions</a>
-        </div>
+<div class="container">
+    
+    <div class="banner-large">
+        Large Campus Banner
     </div>
 
-</body>
+   
+    <div class="banner-small">
+        Small Campus Banner
+    </div>
 
+   
+    <div class="content">
+        <div class="stat-block">
+            <div class="stat-value">80%</div>
+            <div class="stat-text">of Syracuse University students received some form of financial support totaling more than $414 million (2019-2020 data)</div>
+        </div>
+        <div class="stat-block">
+            <div class="stat-value">87%</div>
+            <div class="stat-text">placement outcome (Graduates in full- and part-time positions, military service, volunteer or service programs, and graduate school)</div>
+        </div>
+        <div class="stat-block">
+            <div class="stat-value">80%</div>
+            <div class="stat-text">Positions related to Career Goals</div>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
