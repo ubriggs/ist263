@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Alert on Mouse Out</title>
-    <script>
-        function showAlert() {
-            alert("My first JavaScript program!");
+    <title>Syracuse University</title>
+    <style>
+        #text-div {
+            font-size: 24px;
+            cursor: pointer;
         }
-    </script>
+    </style>
 </head>
 <body>
-    <a href="#" onmouseout="showAlert()">Click for a message</a>
+
+    <div id="text-div" onclick="changeText()">Syracuse University</div>
+
+    <script>
+        function changeText() {
+            const textDiv = document.getElementById('text-div');
+            textDiv.innerText = 'Orange Nation';
+            textDiv.style.color = 'orange';
+        }
+    </script>
+
 </body>
 </html>
