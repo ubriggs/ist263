@@ -1,23 +1,27 @@
+/* General Page Style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #ffffff; 
+    background-color: #ffffff; /* White background for the page */
 }
 
+/* Header and Footer Styling */
 header, footer {
-    background-color: #1e3a8a; 
-    color: #ffffff; 
+    background-color: #1e3a8a; /* Dark blue for header and footer */
+    color: #ffffff; /* White text */
     padding: 10px 0;
     text-align: center;
 }
 
+/* Navigation Styling */
 header nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -25,37 +29,42 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff; 
+    color: #ffffff; /* White links in header */
     text-decoration: none;
     font-weight: bold;
 }
 
 header nav ul li a:hover {
-    color: #ff0000; 
+    color: #ff0000; /* Red on hover */
 }
 
+/* Main Content */
 main {
     padding: 20px;
-    color: #1e3a8a; 
+    color: #1e3a8a; /* Dark blue text for main content */
 }
 
+/* Image Styling */
 main img {
     width: 100%;
     max-width: 600px;
     height: auto;
     border-radius: 8px;
-    border: 3px solid #ff0000; 
+    border: 3px solid #ff0000; /* Red border for image */
+    margin-bottom: 20px; /* Space between images or other elements */
 }
 
+/* Footer Links */
 footer p {
-    color: #ffffff; 
+    color: #ffffff; /* White text in footer */
 }
 
 footer a {
-    color: #ff0000; 
+    color: #ff0000; /* Red links in footer */
     text-decoration: none;
 }
 
+/* Responsive Navigation for Mobile */
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
@@ -63,6 +72,7 @@ footer a {
     }
 }
 
+/* Adjusting Text Sizes for Smaller Screens */
 @media (max-width: 768px) {
     main h1 {
         font-size: 1.8em;
@@ -72,4 +82,3 @@ footer a {
         font-size: 1em;
     }
 }
-
