@@ -1,133 +1,51 @@
+/* Background and Text */
 body {
-    background-color: #00FF00;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0073e6;
+    background-color: #FFFFFF; /* White background for high contrast */
+    color: #000000; /* Black text for readability */
     padding: 20px; 
 }
 
-nav a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        width: 100%;
-        padding: 15px 10px;
-    }
-}
-
-
+/* Navigation Links */
 nav {
-    background-color: #ffff00;
+    background-color: #003366; /* Dark blue background for navigation */
     padding: 10px;
     margin-bottom: 30px;
 }
 
 nav a {
-    color: #0073e6;
+    color: #FFFFFF; /* White text on dark blue background for better contrast */
+    text-decoration: none;
+    padding: 10px;
 }
 
 nav a:hover {
-    background-color: #00FF00;
+    background-color: #0059b3; /* Slightly lighter blue for hover */
 }
 
+/* Rows and Columns Background */
 .row1, .row2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px; /
-    padding: 20px; 
-}
-
-.column1, .column2 {
-    flex: 1;
-    margin-right: 10px;
-    background-color: aliceblue;
+    background-color: #f4f4f4; /* Light gray for better readability */
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 8px;
 }
 
-.column2 {
-    flex: 2;
-}
-
-.row2 .column2 {
-    flex: 2;
-    background-color: aliceblue; 
-}
-
-
-iframe {
-    width: 100%;
-}
-
-.skillscontainer {
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.skillstable, .skillsimage {
-    flex: 1;
-    margin: 10px;
-}
-
-.skillsimage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.skillstable table {
-    margin: 0 auto;
-}
-
-.skillsimage {
-    text-align: center;
-}
-.responsive-image {
-    max-width: 100%;
-    height: auto;
-}
-.row2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px; 
-}
-nav span {
-    display: none;
-  }
-  body {
-    font-size: 1em;
-}
-
-nav a {
-    font-size: 1em;
-}
+/* Buttons */
 .skip-to-content {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #000;
-    color: #fff;
+    background: #0059b3; /* Blue with high contrast */
+    color: #FFFFFF;
     padding: 8px;
     z-index: 100;
 }
 .skip-to-content:focus {
     top: 0;
 }
-body {
-    background-color: #ffffff; 
-    color: #000000; 
+
+/* Table Styling in Skills Page */
+.skillstable table {
+    border: 1px solid #333333; /* Darker borders for visibility */
+    color: #333333; /* Dark gray text for readability */
 }
 
