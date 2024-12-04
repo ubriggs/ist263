@@ -82,5 +82,9 @@ footer a {
         font-size: 1em;
     }
 }
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .clear {clear:both;}
 main{text-align:center;}
