@@ -1,0 +1,118 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff; /* White background for the page */
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #1e3a8a; /* Dark blue for header and footer */
+    color: #ffffff; /* White text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Styling */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White links in header */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    color: #1e3a8a; /* Dark blue text for main content */
+}
+
+/* Image Styling */
+main img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ff0000; /* Red border for image */
+    margin-bottom: 20px; /* Space between images or other elements */
+}
+
+/* Footer Links */
+footer p {
+    color: #ffffff; /* White text in footer */
+}
+
+footer a {
+    color: #ff0000; /* Red links in footer */
+    text-decoration: none;
+}
+
+/* Responsive Navigation for Mobile */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Adjusting Text Sizes for Smaller Screens */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clear {clear:both;}
+main{text-align:center;}
+/* General Section Styling */
+.tips-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tips-section img {
+    width: 100%;
+    max-width: 500px; /* Adjust for layout */
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #1e3a8a; /* Dark blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+}
